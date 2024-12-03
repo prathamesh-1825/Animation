@@ -1,0 +1,73 @@
+/* Reset some default browser styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Basic Navigation Styles */
+.navbar {
+    background-color: #333;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > li {
+    position: relative; /* Required for the dropdown */
+}
+
+/* Main menu links */
+.menu > li > a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu > li > a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content li a:hover {
+    background-color: #666;
+}
+
+/* Show dropdown on hover */
+.menu > .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive Styles (Optional) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu > li > a {
+        padding: 10px;
+    }
+}

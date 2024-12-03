@@ -1,0 +1,45 @@
+/* 
+.container{
+    height: 700px;
+    width: 80%;
+    background-color: yellow;
+    border: solid black;
+    display: inline-block;
+    flex-direction: column-reverse;
+    margin-left: 200px;
+
+}
+p{
+    text-align: center;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 500px;
+    border: solid black;
+    /* background-color: green; 
+    text-align: center;
+    display: inline-block;
+    display: grid;
+
+} */
+p{
+    /* height: 200px;
+    width: 200px;
+    background-color: yellow; */
+    font-size: larger;
+    size: 20px;
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: 2px;
+    color: blue;
+    transition: 3s;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    
+}
+p :hover{
+    color: red;
+    transform: rotate(48deg);
+}
